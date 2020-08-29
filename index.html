@@ -16,6 +16,19 @@
                     911<strong>harm</strong>
                 </span>
             </div>
+            <div id="menu-colap">
+                Menu
+            </div>
+            <div id="colp" class="colp">
+                <h2>911harm</h2>
+                <span id="close">X</span>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+                
+            </div>
             <!-- menu -->
             <nav id="menu">
                 <ul>
@@ -35,7 +48,7 @@
         </div>
     </header>
     <div class="slider">
-        <h1>React</h1>
+        <h1 id="test">React</h1>
     </div>
 
     <div class="center">
@@ -49,10 +62,12 @@
                 </div>
 
                 <h2 style="margin-top: 20px;">Articulo de Pueba</h2>
+
                 <span class="date">
                     hace 5 min
                 </span>
-                <a href="/article.html">Leer más</a>
+
+                <a href="./article.html">Leer más</a>
             </article>
 
         </section>
@@ -82,5 +97,26 @@
             <p>&copy; 911harm</p>
         </div>
     </footer>
+    <script>
+        let entry= document.getElementById("content");
+        for(let i=1;i<5;i++){
+            entry.innerHTML +=` <article class="article-item">
+                <div class="image-wrap">
+                    <img src="https://lorempixel.com/400/400" alt="">
+                </div>
+
+                <h2 style="margin-top: 20px;">Articulo ${i}</h2>
+
+                <span class="date">
+                    hace 5 min
+                </span>
+
+                <a href="/article.html">Leer más</a>
+            </article>
+
+            `
+        }
+    </script>
+    <script src="menu.js"></script>
 </body>
 </html>

@@ -10,6 +10,53 @@ body {
   text-align: center;
 }
 
+body #menu-colap {
+  display: none;
+}
+
+body #colp.view {
+  display: block;
+  width: 90%;
+}
+
+body .colp {
+  display: none;
+  z-index: 100;
+  background: rgba(19, 90, 196, 0.774);
+  height: 100vh;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+body .colp #close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  line-height: 40px;
+  bottom: 20px;
+  right: 0;
+  background: #61dafb;
+  font-size: 2rem;
+  color: white;
+}
+
+body .colp ul li {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+body .colp ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+
 body header {
   height: 120px;
   width: 100%;
@@ -33,8 +80,8 @@ body header .center .logo .app-logo {
   height: 60px;
   display: block;
   float: left;
-  -webkit-animation: giro infinite 5s linear;
-          animation: giro infinite 5s linear;
+  -webkit-animation: giro infinite 8s linear;
+          animation: giro infinite 8s linear;
 }
 
 body header .center .logo #brand {
@@ -111,6 +158,11 @@ body #content .form {
   padding-top: 50px;
   width: 40%;
   margin: auto;
+}
+
+body #content .form textarea {
+  width: 100%;
+  min-height: 200px;
 }
 
 body #content .form .inputs-form {
@@ -243,6 +295,67 @@ body #footer {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 880px) {
+  body header .center #menu {
+    width: 50%;
+    margin: auto;
+  }
+  body header .center .logo {
+    width: auto;
+    float: none;
+  }
+}
+
+@media (max-width: 710px) {
+  body .slider {
+    max-height: 120px;
+  }
+  body .slider h1 {
+    line-height: 120px;
+  }
+  body header .center #menu {
+    display: none;
+  }
+  body header .center #menu-colap {
+    margin-top: 10px;
+    float: right;
+    width: 55px;
+    height: 55px;
+    display: block;
+    line-height: 48px;
+    border: 2px solid #444;
+  }
+  body header .center #menu-colap:hover {
+    background: #34879e;
+    color: white;
+  }
+  body header .center .logo {
+    width: 100%;
+    float: none;
+  }
+  body #content {
+    width: 100%;
+    float: none;
+  }
+  body #content .form {
+    width: 80%;
+  }
+  body #sidebar {
+    float: none;
+    margin: auto;
+    padding-top: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 350px) {
+  body header .center .logo #brand {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

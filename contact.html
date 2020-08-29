@@ -34,27 +34,32 @@
             <div class="clearfix"></div>
         </div>
     </header>
-    <div class="slider">
-        <h1>React</h1>
+    <div class="slider-small">
+        <h1>Contacto</h1>
     </div>
 
     <div class="center">
         <section id="content">
-            <h2 style="font-size: 28px;">Ultimos articulos</h2>
-
-            <!-- Articulos -->
-            <article class="article-item">
-                <div class="image-wrap">
-                    <img src="https://lorempixel.com/400/400" alt="">
-                </div>
-
-                <h2 style="margin-top: 20px;">Articulo de Pueba</h2>
-                <span class="date">
-                    hace 5 min
-                </span>
-                <a href="/article.html">Leer más</a>
-            </article>
-
+            <div class="center ">
+                <form class="form">
+                   <div class="center">
+                    <label for="name">Nombre</label>
+                    <br>
+                    <input class="inputs-form" type="text" name="name">
+                   </div>
+                   <div class="center">
+                       
+                       <label for="email">Correo</label>
+                       <br>
+                       <input class="inputs-form" type="email" name="email">
+                   </div>
+                    <label for="message">Mensaje</label>
+                    <br>
+                    <textarea name="message" cols="60" rows="10"></textarea>
+                    <br>
+                    <input id="btn-submit" type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
 
         <aside id="sidebar">
